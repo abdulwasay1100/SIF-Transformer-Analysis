@@ -1,0 +1,17 @@
+# Docker image graciously provided by Dockerboy David Hafezi Rachti
+image: drachti/q10_project
+
+variables:
+  QUARTO_VERSION: "1.5.55"
+
+
+build:
+  stage: build
+  script:
+    - cd /builds/ss2024-12-geo-m-ds02/sif_transformer/
+    - quarto render
+    - zip -r book_sif_transformer.zip _book
+  artifacts:
+    paths:
+      - /builds/ss2024-12-geo-m-ds02/sif_transformer/*.zip
+

@@ -1,0 +1,24 @@
+project:
+  type: book
+
+book:
+  title: "Transformer-Based Analysis of SIF Under Drought Conditions"
+  author: "Anna Luise von Blohn, Muhammed Abdul Wasay Khalid"
+  date: "7/29/2024"
+  repo-url: https://git.sc.uni-leipzig.de/ss2024-12-geo-m-ds02/sif_transformer/-/tree/main?ref_type=heads
+  chapters:
+    - index.qmd
+    - notebooks/transformer_preprocessing.ipynb
+    - notebooks/transformer_training.ipynb
+    - notebooks/transformer_conclusion.ipynb
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    code-fold: false
+    toc: true
+    embed-resources: true
+
