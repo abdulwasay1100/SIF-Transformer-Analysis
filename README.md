@@ -16,67 +16,6 @@ Our analysis investigates how drought-related variables—air temperature, preci
 
 The transformer’s ability to incorporate multiple input variables enables a comprehensive analysis of ecosystem responses to diverse extreme events. Additionally, SIF can be measured from satellites, providing extensive spatial and temporal coverage for monitoring vegetation health.
 
-## Content
-
-    ├── _book                           <- Directory containing all rendered files for quarto book 
-    └── data                            <- Data directory
-        ├── input_test_data.npy             <- Preprocessed input test data
-        ├── input_train_data.npy            <- Preprocessed input train data
-        ├── output_test_data.npy            <- Preprocessed output test data
-        ├── output_train_data.npy           <- Preprocessed output train data
-    ├── notebooks                       <- Directory containing all code files
-    ├── .gitlab-ci.yml                  <- Gitlab CI/CD pipeline
-    ├── Dockerfile                      <- Dockerfile for pre-build docker container
-    ├── Makefile                        <- Makefile for creating the Quarto book and python environment
-    ├── README.md                       <- README with project description and instructions on how to run the code
-    ├── _quarto.yml                     <- Quarto file to create the quarto book
-    ├── book_sif_transformer.zip        <- Final Quarto book as zip
-    ├── environment.yml                 <- Yml file to create conda python environment
-    ├── index.qmd                       <- Index page for the quarto book
-    ├── references.bib                  <- Bibliography of references used in the Quarto book
-    ├── references.qmd                  <- Bibliography of references used in the Quarto book
-    
-
-## Running the Project
-
-Clone the GitLab respository:
-
-``` git clone git@git.sc.uni-leipzig.de/ss2024-12-geo-m-ds02/sif_transformer.git```
-
-Navigate to project directory
-
-```cd sif_transformer```
-
-
-For computation of this project we use a conda python environment. The necessary packages can be found in environment.yml. The python environment and the Kernel to run the code in JupyterLab can be built using the following commands:
-
-```conda env create -f environment.yml```
-
-
-
-Activate the environment:
-
-```conda activate env_sif_transformer```
-
-Build the Kernel to run the code in a JupyterLab environment:
-
-```python -m ipykernel install --user --name=env_sif_transformer --display-name="Transformer for SIF Prediction"```
-
-
-The Quarto book can be created with the CI/CD Pipeline. If you want to create the Quarto book locally, install Quarto with
-
-```pip install quarto```
-
-
-or follow the instructions on the Quarto Website.
-
-If Quarto is installed, you can render the Quarto book using
-
-```module load quarto```
-
-
-```quarto render```
-
 ## Usage
 
 The script is divided into different sections.
